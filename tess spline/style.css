@@ -1,0 +1,9 @@
+.hi{
+  text-align: center;
+  border: 3px;
+  border-color: #ffd0d0;
+  color: rgb(53, 171, 221);
+  background: #fff3f3;
+  border-style: dashed;
+  font-family:'Gill Sans MT', 'Trebuchet MS';
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Client Example</title>
+</head>
+<body>
+
+<h1>Contoh Client-Side</h1>
+<button onclick="kirimKeServer()">Kirim Data ke Server</button>
+
+<script>
+function kirimKeServer() {
+  fetch('http://localhost:3000/sapa', { // Ini manggil server
+    method: 'GET'
+  })
+  .then(response => response.text())
+  .then(data => {
+    alert('Server Balas: ' + data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
+</script>
+
+</body>
+</html>

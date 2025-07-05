@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+body{
+  background: linear-gradient(to bottom right, rgb(216, 221, 224), rgba(52, 202, 190, 0.825), rgba(19, 222, 141, 0.438));
+  height: 100vh;
+}
+
+#Navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-bottom: 20px;
+}
+
+.navbar-button{
+  text-decoration: none;
+}
+
+.intro button{
+  margin-top: 20px;
+  border: none;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00e200, #3333e3, #c715c7, orange, #ffff2d, #00e200);
+  background-size: 1000% auto;
+  animation: intro 100s linear infinite;
+  font-weight: 900;
+  color: black;
+}
+@keyframes intro{
+  to{
+    background-position: 1000%;
+  }
+}
+
